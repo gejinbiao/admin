@@ -1,0 +1,113 @@
+package ${controller.packageName};
+
+<% for(import in controller.imports!){ %>
+import ${import};
+<% } %>
+
+/**
+ * ${context.bizChName}控制器
+ *
+ * @author gjb
+ * @Date ${tool.currentTime()}
+ */
+@Controller
+@RequestMapping("/${context.bizEnName}")
+public class ${context.bizEnBigName}Controller extends BaseController {
+
+    private String PREFIX = "/modular/${context.moduleName}/${context.bizEnName}/";
+
+    @Autowired
+    private ${context.entityName}Service ${context.bizEnName}Service;
+
+    /**
+     * 跳转到${context.bizChName}首页
+     */
+    @RequestMapping("")
+    public String index() {
+        return PREFIX + "${context.bizEnName}.html";
+    }
+
+    /**
+     * 跳转到添加${context.bizChName}
+     */
+    @RequestMapping("/${context.bizEnName}_add")
+    public String ${context.bizEnName}Add() {
+        return PREFIX + "${context.bizEnName}_add.html";
+    }
+
+    /**
+     * 跳转到修改${context.bizChName}
+     */
+    @RequestMapping("/${context.bizEnName}_edit")
+    public String ${context.bizEnName}Update(String ${context.bizEnName}Id) {
+        return PREFIX + "${context.bizEnName}_edit.html";
+    }
+
+    /**
+     * 获取${context.bizChName}列表
+     */
+    @RequestMapping(value = "/list")
+    @ResponseBody
+    public Object list(Integer page, Integer limit, ${context.bizEnBigName} ${context.bizEnName}) {
+        IPage<${context.bizEnBigName}> ${context.bizEnName}Page = ${context.bizEnName}Service.pageList(page, limit, ${context.bizEnName});
+        return LayuiPageFactory.createPageInfo(${context.bizEnName}Page);
+    }
+
+    /**
+     * 新增${context.bizChName}
+     */
+    @RequestMapping(value = "/add")
+    @ResponseBody
+    public Object add(${context.entityName} ${context.bizEnName}) {
+        ${context.bizEnName}Service.save(${context.bizEnName});
+        return SUCCESS_TIP;
+    }
+
+    /**
+     * 删除${context.bizChName}
+     */
+    @RequestMapping(value = "/delete")
+    @ResponseBody
+    public Object delete(@RequestParam Integer ${context.bizEnName}Id) {
+         if (ToolUtil.isEmpty(${context.bizEnName}Id)) {
+                throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
+            }
+        this.${context.bizEnName}Service.removeById(${context.bizEnName}Id);
+        return SUCCESS_TIP;
+    }
+
+    /**
+     * 修改${context.bizChName}
+     */
+    @RequestMapping(value = "/edit")
+    @ResponseBody
+    public Object edit(${context.entityName} ${context.bizEnName}) {
+        ${context.bizEnName}Service.updateById(${context.bizEnName});
+        return SUCCESS_TIP;
+    }
+
+    /**
+     * 查看${context.bizChName}
+     *
+     * @author gjb
+     */
+    @RequestMapping(value = "/view/{${context.bizEnName}Id}")
+    @ResponseBody
+    public ResponseData view(@PathVariable Long ${context.bizEnName}Id) {
+        if (ValidateUtil.isEmpty(${context.bizEnName}Id)) {
+            throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
+        }
+        ${context.entityName} ${context.bizEnName} = this.${context.bizEnName}Service.getById(${context.bizEnName}Id);
+
+        return ResponseData.success(${context.bizEnName});
+    }
+
+    /**
+     * ${context.bizChName}详情
+     */
+    @RequestMapping(value = "/detail/{${context.bizEnName}Id}")
+    @ResponseBody
+    public Object detail(@PathVariable("${context.bizEnName}Id") Integer ${context.bizEnName}Id) {
+        return ${context.bizEnName}Service.getById(${context.bizEnName}Id);
+    }
+}

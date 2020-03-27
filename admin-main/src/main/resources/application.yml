@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  max-http-header-size: 10240
+  servlet:
+    context-path: /admin
+
+spring:
+  profiles:
+    active: @spring.active@
+  mvc:
+    view:
+      prefix: /pages
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  jta:
+    atomikos:
+      properties:
+        max-actives: -1
+  main:
+    #开启对象重新加载覆盖
+    allow-bean-definition-overriding: true
+  aop:
+    #开启代理使用cglib
+    proxy-target-class: true
+  devtools:
+    remote:
+      restart:
+        enabled: true
+
+
+mybatis-plus:
+  typeAliasesPackage: com.gjb.admin.modular.system.model
+  mapper-locations:
+    - classpath*:com/gjb/admin/**/mapping/*.xml
+
+log:
+  path: _app_logs

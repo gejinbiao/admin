@@ -1,0 +1,22 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/${context.bizEnName}/${context.bizEnName}_edit.js"]}){
+<form id="${context.bizEnBigName}Form" lay-filter="${context.bizEnBigName}Form" class="layui-form model-form">
+ <% for(var i=0;i<table.fields.~size;i++){ %>
+        <% if(i == 0 ){ %>
+            <input name="id" id="id" type="hidden"/>
+        <% }else{ %>
+            <% if(table.fields[i].columnType.type !='Timestamp' && table.fields[i].columnType.type !='Date' && table.fields[i].columnType.type !='LocalDateTime' ){ %>
+                 <div class="layui-form-item">
+                        <label class="layui-form-label">${table.fields[i].comment}</label>
+                        <div class="layui-input-block" >
+                            <input name="${table.fields[i].propertyName}"  type="text" class="layui-input" lay-verify="required"/>
+                        </div>
+                 </div>
+         <% }%>
+     <% } %>
+<% } %>
+    <div class="layui-form-item text-right">
+        <a class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</a>
+        <a class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</a>
+    </div>
+</form>
+@}

@@ -1,0 +1,34 @@
+package ${service.packageName};
+
+<% for(import in service.serviceInterfaceImports!){ %>
+import ${import};
+<% } %>
+
+
+/**
+ * <p>
+ * ${context.bizChName} 服务
+ * </p>
+ *
+ * @author gjb
+ * @Date ${tool.currentTime()}
+ */
+@Service
+public class ${context.bizEnBigName}Service extends ServiceImpl<${context.bizEnBigName}Mapper, ${context.bizEnBigName}> {
+
+
+    /**
+     * 分页查询
+     *
+     * @param pageIndex
+     * @param limit
+     * @param ${context.bizEnName}
+     * @return
+     */
+    public IPage<${context.bizEnBigName}> pageList(Integer pageIndex, Integer limit, ${context.bizEnBigName} ${context.bizEnName}) {
+        Page page = new Page<${context.bizEnBigName}>(pageIndex, limit);
+        QueryWrapper<${context.bizEnBigName}> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("id");
+        return this.page(page, queryWrapper);
+    }
+}

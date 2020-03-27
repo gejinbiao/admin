@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin-main" />
+        <module name="admin-base-auth" />
+        <module name="admin-sys" />
+        <module name="admin-model" />
+        <module name="admin-base" />
+        <module name="admin-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-architecture" target="1.8" />
+      <module name="admin-base" target="1.8" />
+      <module name="admin-base-auth" target="1.8" />
+      <module name="admin-base-support" target="1.8" />
+      <module name="admin-core" target="1.8" />
+      <module name="admin-main" target="1.8" />
+      <module name="admin-model" target="1.8" />
+      <module name="admin-sys" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-base" options="-parameters" />
+      <module name="admin-base-auth" options="-parameters" />
+      <module name="admin-core" options="-parameters" />
+      <module name="admin-main" options="-parameters" />
+      <module name="admin-model" options="-parameters" />
+      <module name="admin-sys" options="-parameters" />
+    </option>
+  </component>
+</project>

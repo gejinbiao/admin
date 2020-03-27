@@ -1,0 +1,136 @@
+@layout("/common/_container.html",{plugins:["ztree"],js:["/assets/code/gen.js","/assets/code/select-list-object.js"]}){
+<style type="text/css">
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    a.list-group-item.active,
+    a.list-group-item.active:hover,
+    a.list-group-item.active:focus {
+        background-color: #1ab394;
+        border-color: #1ab394;
+        color: #FFFFFF;
+        z-index: 2;
+    }
+</style>
+<div class="layui-body-header">
+    <span class="layui-body-header-title">代码生成</span>
+</div>
+
+<div class="layui-fluid">
+    <form class="layui-form" id="deptForm" lay-filter="deptForm">
+    <div class="layui-card">
+        <div class="layui-card-header">基础信息444</div>
+        <div class="layui-card-body">
+            <div class="layui-form-item layui-row">
+                <input name="userId" type="hidden">
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">项目路径<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input name="projectPath" id="projectPath" value="${params.projectPath}"  class="layui-input" lay-verify="required" required>
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">项目的包<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input id="projectPackage" name="projectPackage" value="${params.projectPackage}" type="text" class="layui-input" lay-verify="required" required>
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">核心包</label>
+                    <div class="layui-input-block">
+                        <input id="corePackage" name="corePackage" value="${params.corePackage}" type="text" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">作者<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input id="author" name="author" value="${params.author!}" class="layui-input" lay-verify="required" required>
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">业务名称<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input id="bizName" name="bizName" class="layui-input" lay-verify="required" required>
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">模块名称<span style="color: red;">*</span></label>
+                    <div class="layui-input-block">
+                        <input id="moduleName" name="moduleName" type="text" class="layui-input" lay-verify="required" required>
+                    </div>
+                </div>
+               <!-- <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">父级菜单名称</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" id="parentMenuName" name="parentMenuName" value="系统管理" type="text"
+                               readonly="readonly" onclick="Code.showMenuSelectTree(); return false;"
+                               style="background-color: #ffffff !important;">
+                        <input class="layui-input" type="hidden" id="pid" value="">
+                    </div>
+                </div>-->
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">表名称</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" id="tableName" name="tableName" type="text" disabled="disabled">
+                    </div>
+                </div>
+                <!--<div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">表前缀</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" id="ignoreTabelPrefix" name="ignoreTabelPrefix" type="text">
+                    </div>
+                </div>-->
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">类名</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" id="className" name="className" type="text" disabled="disabled">
+                    </div>
+                </div>
+
+                <div style="padding-top: 10px;" class="layui-inline layui-col-md12">
+                    <div class="layui-col-md12">
+                        <div class="layui-row admin-form">
+                            <div class="layui-col-md3 layui-col-md-offset3">
+                                <h2>数据表</h2>
+                                <div class="list-group" id="tableList"
+                                     data-bind="foreach: tables"
+                                     style="height: 500px; overflow-y: scroll">
+                                    @for(table in tables!){
+                                    <a href="javascript:void(0)" class="list-group-item" tableName="${table.tableName}"
+                                       onclick="Code.selectTable('${table.tableName}')">${table.tableName}-${table.tableComment}</a>
+                                    @}
+                                </div>
+                            </div>
+                            <div class="layui-col-md3">
+                                <span><h2>模板</h2></span>
+                                <div class="list-group" id="templateList"
+                                     style="height: 500px; overflow-y: scroll">
+                                    @for(template in templates!){
+                                    <a href="javascript:void(0)" class="list-group-item" key="${template.key}"
+                                       onclick="Code.selectTemplate('${template.key}')">${template.desc}</a>
+                                    @}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-row">
+                            <div class="layui-col-sm6">
+                                <a id="genBtn" type="button" class="layui-btn" lay-filter="btnSubmit" lay-submit>
+                                    <span style="padding: 5px 20px;">生成</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+@}
+

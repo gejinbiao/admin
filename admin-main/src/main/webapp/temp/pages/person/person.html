@@ -1,0 +1,50 @@
+@layout("/common/_container.html",{js:["/assets/modular/system/person/person.js"]}){
+
+<div class="layui-body-header">
+    <span class="layui-body-header-title">人员管理</span>
+</div>
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-sm12 layui-col-md12 layui-col-lg12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-form toolbar">
+                        <div class="layui-form-item">
+                                      <div class="layui-inline">
+                                         <input id="name" name="name" class="layui-input" type="text" placeholder="姓名"/>
+                                      </div>
+                                      <div class="layui-inline">
+                                         <input id="age" name="age" class="layui-input" type="text" placeholder="年龄"/>
+                                      </div>
+                                      <div class="layui-inline">
+                                         <input id="address" name="address" class="layui-input" type="text" placeholder="地址"/>
+                                      </div>
+                                      <div class="layui-inline">
+                                         <input id="remark" name="remark" class="layui-input" type="text" placeholder="备注"/>
+                                      </div>
+
+                            <div class="layui-inline">
+                                 @if(shiro.hasPermission("/person/add")){
+                                <button id="btnAdd" class="layui-btn icon-btn"><i class="layui-icon">&#xe654;</i>添加</button>
+                                @}
+                                <button id="btnSearch" class="layui-btn icon-btn"><i class="layui-icon">&#xe615;</i>搜索</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="layui-table" id="PersonTable" lay-filter="PersonTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tableBar">
+    @if(shiro.hasPermission("/person/edit")){
+    <a lay-event="edit" title="修改" ><i class="layui-icon layui-icon-edit" style="font-size: 25px; color: #1E9FFF;"></i></a>
+    @}
+    @if(shiro.hasPermission("/person/remove")){
+    <a lay-event="delete" title="删除" ><i class="layui-icon layui-icon-delete" style="font-size: 25px; color: #ff5722;"></i></a>
+    @}
+</script>
+@}

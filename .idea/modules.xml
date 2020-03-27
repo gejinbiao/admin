@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/admin-architecture.iml" filepath="$PROJECT_DIR$/admin-architecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-base-support/admin-base/admin-base.iml" filepath="$PROJECT_DIR$/admin-base-support/admin-base/admin-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-base-support/admin-base-auth/admin-base-auth.iml" filepath="$PROJECT_DIR$/admin-base-support/admin-base-auth/admin-base-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-base-support/admin-base-support.iml" filepath="$PROJECT_DIR$/admin-base-support/admin-base-support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-base-support/admin-core/admin-core.iml" filepath="$PROJECT_DIR$/admin-base-support/admin-core/admin-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-main/admin-main.iml" filepath="$PROJECT_DIR$/admin-main/admin-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-base-support/admin-model/admin-model.iml" filepath="$PROJECT_DIR$/admin-base-support/admin-model/admin-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-base-support/admin-sys/admin-sys.iml" filepath="$PROJECT_DIR$/admin-base-support/admin-sys/admin-sys.iml" />
+    </modules>
+  </component>
+</project>

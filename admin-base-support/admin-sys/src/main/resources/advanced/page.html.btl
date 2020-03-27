@@ -1,0 +1,45 @@
+@layout("/common/_container.html",{js:["/assets/${context.bizEnName}/${context.bizEnName}.js"]}){
+
+<div class="layui-body-header">
+    <span class="layui-body-header-title">${context.bizChName}</span>
+</div>
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-sm12 layui-col-md12 layui-col-lg12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-form toolbar">
+                        <div class="layui-form-item">
+                             <% for(var i=0;i<table.fields.~size;i++){ %>
+                               <% if(table.fields[i].propertyName != 'id' && table.fields[i].columnType.type !='Timestamp' && table.fields[i].columnType.type !='Date' && table.fields[i].columnType.type !='LocalDateTime'  ){ %>
+                                      <div class="layui-inline">
+                                         <input id="${table.fields[i].propertyName}" name="${table.fields[i].propertyName}" class="layui-input" type="text" placeholder="${table.fields[i].comment}"/>
+                                      </div>
+                                 <% }%>
+                            <% } %>
+
+                            <div class="layui-inline">
+                                 @if(shiro.hasPermission("/${context.bizEnName}/add")){
+                                <button id="btnAdd" class="layui-btn icon-btn"><i class="layui-icon">&#xe654;</i>添加</button>
+                                @}
+                                <button id="btnSearch" class="layui-btn icon-btn"><i class="layui-icon">&#xe615;</i>搜索</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="layui-table" id="${context.bizEnBigName}Table" lay-filter="${context.bizEnBigName}Table"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tableBar">
+    @if(shiro.hasPermission("/${context.bizEnName}/edit")){
+    <a lay-event="edit" title="修改" ><i class="layui-icon layui-icon-edit" style="font-size: 25px; color: #1E9FFF;"></i></a>
+    @}
+    @if(shiro.hasPermission("/${context.bizEnName}/remove")){
+    <a lay-event="delete" title="删除" ><i class="layui-icon layui-icon-delete" style="font-size: 25px; color: #ff5722;"></i></a>
+    @}
+</script>
+@}

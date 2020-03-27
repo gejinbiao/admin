@@ -1,0 +1,11 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.gjb.core.config.AopAutoConfiguration,\
+com.gjb.core.config.RedisAutoConfiguration,\
+com.gjb.core.config.FastjsonAutoConfiguration,\
+com.gjb.core.config.MybatisDataSourceAutoConfiguration,\
+com.gjb.core.config.PropertiesAutoConfiguration,\
+com.gjb.core.config.UtilAutoConfiguration,\
+com.gjb.core.config.WebAutoConfiguration,\
+com.gjb.core.config.DbInitializerAutoConfiguration,\
+com.gjb.core.config.MybatisPluginAutoConfiguration

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="570d6577-3f2c-4baa-8ac3-1ed68c7e716a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectId" id="1ZYsGkULYFIbv4ZjfGF7sHKnx0a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gjb.core.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\testWorkspace\admin1\admin-main\src\main\java\com\gjb\admin" />
+      <recent name="E:\testWorkspace\admin1\admin-main\src\main\webapp\pages" />
+      <recent name="E:\testWorkspace\admin1\admin-main\src\main\webapp\assets" />
+      <recent name="E:\testWorkspace\admin1\admin-base-support\admin-sys\src\main\resources\advanced" />
+      <recent name="E:\testWorkspace\admin1\admin-base-support\admin-sys\src\main\webapp\assets\common\module" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GunsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="admin-main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gjb.admin.GunsApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="570d6577-3f2c-4baa-8ac3-1ed68c7e716a" name="Default Changelist" comment="" />
+      <created>1585027267366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585027267366</updated>
+      <workItem from="1585027270199" duration="351000" />
+      <workItem from="1585027631168" duration="5383000" />
+      <workItem from="1585033255724" duration="11056000" />
+      <workItem from="1585099222815" duration="6940000" />
+      <workItem from="1585106921957" duration="7301000" />
+      <workItem from="1585119203035" duration="5024000" />
+      <workItem from="1585124309691" duration="1308000" />
+      <workItem from="1585125643699" duration="5062000" />
+      <workItem from="1585186146036" duration="18804000" />
+      <workItem from="1585271505105" duration="13088000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="627" y="177" width="1221" height="685" key="#Project_Structure" timestamp="1585029697585">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="177" width="1221" height="685" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1585029697585" />
+    <state x="414" y="174" width="1174" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585207737503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" width="1174" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585207737503" />
+    <state x="1156" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585129371998">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1156" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585129371998" />
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1585214718043">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585214718043" />
+    <state x="474" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585115782742">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="474" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585115782742" />
+    <state x="715" y="221" key="#xdebugger.evaluate" timestamp="1585188022441">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1585188022441" />
+    <state width="911" height="466" key="DebuggerActiveHint" timestamp="1585187847519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="911" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1585187847519" />
+    <state x="795" y="254" key="FileChooserDialogImpl" timestamp="1585288115671">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="254" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585288115671" />
+    <state width="1876" height="210" key="GridCell.Tab.0.bottom" timestamp="1585297250168">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250168" />
+    <state width="1876" height="210" key="GridCell.Tab.0.center" timestamp="1585297250167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250167" />
+    <state width="1876" height="210" key="GridCell.Tab.0.left" timestamp="1585297250167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250167" />
+    <state width="1876" height="210" key="GridCell.Tab.0.right" timestamp="1585297250167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250167" />
+    <state width="1876" height="377" key="GridCell.Tab.1.bottom" timestamp="1585297250158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="377" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250158" />
+    <state width="1876" height="377" key="GridCell.Tab.1.center" timestamp="1585297250158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="377" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250158" />
+    <state width="1876" height="377" key="GridCell.Tab.1.left" timestamp="1585297250158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="377" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250158" />
+    <state width="1876" height="377" key="GridCell.Tab.1.right" timestamp="1585297250158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="377" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250158" />
+    <state width="1876" height="377" key="GridCell.Tab.2.bottom" timestamp="1585297250159">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="377" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250159" />
+    <state width="1876" height="377" key="GridCell.Tab.2.center" timestamp="1585297250159">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="377" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250159" />
+    <state width="1876" height="377" key="GridCell.Tab.2.left" timestamp="1585297250158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="377" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250158" />
+    <state width="1876" height="377" key="GridCell.Tab.2.right" timestamp="1585297250159">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="377" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585297250159" />
+    <state x="531" y="181" key="Registry" timestamp="1585125133460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="531" y="181" key="Registry/0.0.1920.1040@0.0.1920.1040" timestamp="1585125133460" />
+    <state x="880" y="121" key="SettingsEditor" timestamp="1585104348381">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="880" y="121" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585104348381" />
+    <state x="636" y="251" width="928" height="608" key="find.popup" timestamp="1585298902104">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="251" width="928" height="608" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585298902104" />
+    <state x="330" y="213" key="new project wizard" timestamp="1585029842844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="330" y="213" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585029842844" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585296289321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585296289321" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/core/auth/AuthServiceImpl.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.3.0/mybatis-plus-extension-3.3.0.jar!/com/baomidou/mybatisplus/extension/toolkit/SqlRunner.class</url>
+          <line>103</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class</url>
+          <line>123</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class</url>
+          <line>122</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.1.0/mybatis-plus-extension-3.1.0.jar!/com/baomidou/mybatisplus/extension/toolkit/SqlRunner.class</url>
+          <line>93</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.1.0/mybatis-plus-extension-3.1.0.jar!/com/baomidou/mybatisplus/extension/toolkit/SqlRunner.class</url>
+          <line>97</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/controller/CodeController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/action/config/WebGeneratorConfig.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/action/config/AbstractGeneratorConfig.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/action/config/GunsGeneratorConfig.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/action/config/AbstractGeneratorConfig.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/engine/base/TemplateEngine.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/engine/base/AbstractTemplateEngine.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/engine/SimpleTemplateEngine.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-base-support/admin-sys/src/main/java/com/gjb/admin/sys/code/engine/base/TemplateEngine.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-main/src/main/java/com/gjb/system/controller/PersonController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

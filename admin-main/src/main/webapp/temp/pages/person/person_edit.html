@@ -1,0 +1,33 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/system/person/person_edit.js"]}){
+<form id="PersonForm" lay-filter="PersonForm" class="layui-form model-form">
+            <input name="id" id="id" type="hidden"/>
+                 <div class="layui-form-item">
+                        <label class="layui-form-label">姓名</label>
+                        <div class="layui-input-block" >
+                            <input name="name"  type="text" class="layui-input" lay-verify="required"/>
+                        </div>
+                 </div>
+                 <div class="layui-form-item">
+                        <label class="layui-form-label">年龄</label>
+                        <div class="layui-input-block" >
+                            <input name="age"  type="text" class="layui-input" lay-verify="required"/>
+                        </div>
+                 </div>
+                 <div class="layui-form-item">
+                        <label class="layui-form-label">地址</label>
+                        <div class="layui-input-block" >
+                            <input name="address"  type="text" class="layui-input" lay-verify="required"/>
+                        </div>
+                 </div>
+                 <div class="layui-form-item">
+                        <label class="layui-form-label">备注</label>
+                        <div class="layui-input-block" >
+                            <input name="remark"  type="text" class="layui-input" lay-verify="required"/>
+                        </div>
+                 </div>
+    <div class="layui-form-item text-right">
+        <a class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</a>
+        <a class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</a>
+    </div>
+</form>
+@}
